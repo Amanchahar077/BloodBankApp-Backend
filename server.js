@@ -23,6 +23,7 @@ const PORT = process.env.PORT || 8080;
 app.use("/api/v1", router);
 app.use("/api/v1/auth", require("./routes/authRoutes"));
 
+
 app.listen(PORT, () => {
   console.log(
     `Node server running in ${process.env.DEV_MODE} mode on ${process.env.PORT}`
